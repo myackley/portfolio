@@ -8,3 +8,65 @@ slightly ligher orange => #FF6B3D
 off gray => #F4F2ED
 
 */
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+}
+
+/*
+font weights
+
+normal 400
+normal 400 italic {
+	base text
+}
+
+semi-bold 600 {
+	base text bold, links?
+}
+
+bold 700 {
+	headings
+}
+
+*/
+
+h1, h2, h3, h4 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 2.25em; /* 36/16 */
+}
+h2 {
+	font-size: 1.75em; /* 28/16 */
+}
+h3 {
+	font-size: 1.5em; /* 24/16 */
+}
+h4 {
+	font-size: 1.125em; /* 18/16 */
+}
+p {
+	font-size: 1em;
+}
+
+/*
+inline ul helper
+*/
+
+.inline {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.inline:after, .inline:before {
+	content: "";
+	display: table;
+}
+.inline:after {
+	clear: both;
+}
+.inline li {
+	float: left; /* #! always float this way? */
+}
