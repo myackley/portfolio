@@ -126,12 +126,30 @@ container
 /* media queries */
 @media all and (max-width: 480px) {
 	.container {width: 100%;}
+	.port_head {
+		background: url(img/headerbg-handheld.jpg) 0 0 #333 no-repeat;
+		background-size: cover;
+	}
 }
 
 @media all and (max-width: 768px) {
 	.container {width: 100%;}
+	.port_head {
+		background: url(img/headerbg-tablet.jpg) 0 0 #333 no-repeat;
+		background-size: cover;
+	}
 }
 
 @media all and (min-width: 991px) {
 	.container {width: 991px; margin: auto;}
+	.port_head {
+		background: url(img/headerbg-desktop.jpg) 0 0 #333 no-repeat;
+		background-size: cover;
+	}
+}
+@media all and (min-width: 1100px) {
+	.port_head {
+		background: url(img/headerbg-hd.jpg) 0 0 #333 no-repeat;
+		background-size: cover;
+	}
 }
