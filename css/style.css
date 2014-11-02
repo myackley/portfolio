@@ -164,7 +164,7 @@ icons
 	line-height: 1.85em;
 	background: rgba(10,10,10,.5);
 }
-.icon_links:link {
+.icon_links:link, .icon_links:visited {
 	color: #fff;
 	font-size: 1.5em;
 	width: 1.75em;
@@ -247,6 +247,11 @@ icons
 /* port work */
 .port_work {
 	padding: 2em 0 3em;
+}
+.port_work img {
+	border: .1em solid #ccc;
+	max-width: 100%;
+	height: auto;
 }
 
 /* port foot contact */
