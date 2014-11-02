@@ -22,7 +22,7 @@ html, body {
 box-sizing helper
 */
 
-div, :before, :after, h1, h2, h3, h4, p {
+div, :before, :after, h1, h2, h3, h4, p, ul {
 	box-sizing: border-box;
 }
 
@@ -89,15 +89,29 @@ inline ul helper
 	padding: 0;
 	margin: 0;
 }
-.inline:after, .inline:before {
+.inline:after, .inline:before, .container:after, .container:before {
 	content: "";
 	display: table;
 }
-.inline:after {
+.inline:after, .container:after {
 	clear: both;
 }
 .inline li {
-	float: left; /* #! always float this way? */
+	float: left;
+}
+
+/*
+inline ul helper > center floated items
+*/
+.centerwrapper {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.centerwrapper_items {
+	float: left;
+	position: relative;
+	left: -50%;
 }
 
 /*
@@ -154,6 +168,9 @@ links
 .port_foot-contact {
 	background: #807857;
 	padding: 1.2em 0;
+}
+.port_foot-contact > div {
+	text-align: center;
 }
 
 /* port foot links */
