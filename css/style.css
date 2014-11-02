@@ -55,12 +55,12 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: 2.25em; /* 36/16 */
 	color: #fff;
-
+	text-shadow: 0 .1em .15em #333;
 }
 h1 div {
 	font-weight: 400;
 	font-size: .5em;
-	color: #ccc;
+	color: #eee;
 }
 h2 {
 	font-size: 1.75em; /* 28/16 */
@@ -142,7 +142,7 @@ links
 .nav-link:hover {}
 .nav-link:active {color: #fff;}
 
-.block-link:link {color: #FAA047; text-decoration: none; display: block;}
+.block-link:link {color: #FAA047; text-decoration: none; display: block; padding: .6em 0;}
 .block-link:visited {color: #FAA047;}
 .block-link:hover {color: #;}
 .block-link:active {color: #FAA047;}
@@ -162,7 +162,7 @@ icons
 	border-radius: 50%;
 	border: .1em solid #ccc;
 	line-height: 1.85em;
-	background: rgba(10,10,10,.4);
+	background: rgba(10,10,10,.5);
 }
 .icon_links:link {
 	color: #fff;
@@ -180,7 +180,6 @@ icons
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
 	-o-transition: all 300ms ease-out;
-	/*background: rgba(10,10,10,.4);*/
 	background: rgba(255,255,255,.2);
 }
 .icon_links:hover {
@@ -188,10 +187,13 @@ icons
 	-webkit-transition: all 300ms ease-in;
 	-moz-transition: all 300ms ease-in;
 	-o-transition: all 300ms ease-in;
-	/*background: rgba(20,20,20,1);*/
 	color: #FF6B3D;
 	background: rgba(255,255,255,1);
 }
+
+
+
+
 
 /* nav */
 .nav {
@@ -199,7 +201,8 @@ icons
 	background: #38362E;
 	position: fixed;
 	top: 0;
-	padding: .5em 0;
+	padding: .2em 0;
+	z-index: 99;
 }
 .nav ul {
 	float: right;
@@ -212,11 +215,33 @@ icons
 /* port head */
 .port_head {
 	width: 100%;
-	height: 491px;
+	height: 550px;
 }
+.port_head .lead {
+	padding: .5em;
+	background: rgba(10,10,10,.5);
+	border-radius: .5em;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	-o-border-radius: .5em;
+}
+
 .port_head-contentarea {
 	padding: 2em 0 1.5em;
 	text-align: center;
+}
+
+/* avatar */
+.port_head-avatar {
+	margin: 3.2em auto 2em auto;
+	width: 7em;
+	height: 7em;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border: .3em solid #fff;
+	overflow: hidden;
 }
 
 /* port work */
