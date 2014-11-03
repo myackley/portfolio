@@ -272,6 +272,10 @@ icons
 	padding: .3em .75em;
 	display: block;
 }
+.port_foot-links p {
+	text-align: center;
+	color: #fff;
+}
 
 /* media queries */
 @media all and (max-width: 480px) {
