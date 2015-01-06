@@ -207,10 +207,20 @@ icons
 .nav ul {
 	float: right;
 }
-.nav li > a,
-.nav > div > a {
+.nav li > a {
 	padding: .3em .75em;
 	display: inline-block;
+}
+.nav li .totop {
+	display: block;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	background-color: #000;
+	padding: inherit .3em;
+	font-size: .8em;
+	margin: .3em .4em .2em;
 }
 
 /* port head */
